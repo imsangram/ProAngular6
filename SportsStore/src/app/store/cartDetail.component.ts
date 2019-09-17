@@ -5,6 +5,5 @@ import { Cart } from '../model/cart.model';
 })
 export class CartDetailComponent {
     constructor(public cart: Cart) {
-        debugger;
      }
  }

@@ -14,8 +14,8 @@ export class StoreComponent {
   public productsPerPage = 4;
   public selectedPage = 1;
 
-  constructor(private repository: ProductRepository, private cart: Cart,private router: Router) {
-
+  constructor(private repository: ProductRepository, private cart: Cart, private router: Router) {
+    
   }
 
   get products(): Product[] {
@@ -55,8 +55,6 @@ export class StoreComponent {
   }
 
   addProductToCart(product: Product) {
-    debugger;
     this.cart.addLine(product);
-    //this.router.navigateByUrl("/cart");
     }
 }
