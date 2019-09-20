@@ -14,7 +14,7 @@ export class StoreComponent {
   public productsPerPage = 4;
   public selectedPage = 1;
 
-  constructor(private repository: ProductRepository, private cart: Cart, private router: Router) {
+  constructor(private repository: ProductRepository, private cart: Cart) {
     
   }
 

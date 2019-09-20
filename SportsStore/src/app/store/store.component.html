@@ -12,6 +12,9 @@
                 class="btn btn-outline-primary btn-block" [class.active]="cat == selectedCategory">
                 {{cat}}
             </button>
+            <button class="btn btn-block btn-danger m-t-3" routerLink="/admin">
+                Admin
+            </button>
         </div>
         <div class="col-9 p-2">
             <div *ngFor="let product of products;let i = index;" class="card m-1 p-1 bg-light">
