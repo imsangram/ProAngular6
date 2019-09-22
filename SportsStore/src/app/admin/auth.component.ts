@@ -8,8 +8,8 @@ import { AuthService } from "../model/auth.service";
     templateUrl: "auth.component.html"
 })
 export class AuthComponent {
-    public username: string = 'sangram';
-    public password: string = 'abcd1234';
+    public username: string = 'admin';
+    public password: string = 'secret';
     public errorMessage: string;
 
     constructor(private router: Router, private auth: AuthService) {
